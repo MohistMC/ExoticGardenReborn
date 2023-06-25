@@ -10,9 +10,9 @@ public final class ExoticGardenRecipeTypes {
 
     private ExoticGardenRecipeTypes() {}
 
-    public static final RecipeType KITCHEN = new RecipeType(new NamespacedKey(ExoticGarden.instance, "kitchen"), new SlimefunItemStack("KITCHEN", Material.CAULDRON, "&e厨房"), "", "&r这个物品必须要在", "&r厨房里制作");
-    public static final RecipeType BREAKING_GRASS = new RecipeType(new NamespacedKey(ExoticGarden.instance, "breaking_grass"), new CustomItemStack(Material.GRASS, "&7破坏杂草"));
-    public static final RecipeType HARVEST_TREE = new RecipeType(new NamespacedKey(ExoticGarden.instance, "harvest_tree"), new CustomItemStack(Material.OAK_LEAVES, "&a从树木中获得", "", "&r通过种植特定树木", "&r获得"));
-    public static final RecipeType HARVEST_BUSH = new RecipeType(new NamespacedKey(ExoticGarden.instance, "harvest_bush"), new CustomItemStack(Material.OAK_LEAVES, "&a从灌木丛中获得", "", "&r通过种植特定灌木丛", "&r获得"));
+    public static final RecipeType KITCHEN = new RecipeType(new NamespacedKey(ExoticGarden.instance, "kitchen"), new SlimefunItemStack("KITCHEN", Material.CAULDRON, ExoticGarden.I18N.get("recipe.type.kitchen")), "", ExoticGarden.I18N.get("desc.kitchen.1"), ExoticGarden.I18N.get("desc.kitchen.2"));
+    public static final RecipeType BREAKING_GRASS = new RecipeType(new NamespacedKey(ExoticGarden.instance, "breaking_grass"), new CustomItemStack(Material.GRASS, ExoticGarden.I18N.get("recipe.type.breaking_grass")));
+    public static final RecipeType HARVEST_TREE = new RecipeType(new NamespacedKey(ExoticGarden.instance, "harvest_tree"), new CustomItemStack(Material.OAK_LEAVES, ExoticGarden.I18N.get("recipe.type.harvest_tree"), "", ExoticGarden.I18N.get("desc.harvest_tree.1"), ExoticGarden.I18N.get("desc.harvest_tree.2")));
+    public static final RecipeType HARVEST_BUSH = new RecipeType(new NamespacedKey(ExoticGarden.instance, "harvest_bush"), new CustomItemStack(Material.OAK_LEAVES, ExoticGarden.I18N.get("recipe.type.harvest_bush"), "", ExoticGarden.I18N.get("desc.harvest_bush.1"), ExoticGarden.I18N.get("desc.harvest_bush.2")));
 
 }
